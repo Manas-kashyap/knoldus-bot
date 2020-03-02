@@ -106,15 +106,12 @@ def empty_message(bot, update):
 
 
 dispatcher.add_handler(CommandHandler('website', website))
-dispatcher.add_handler(CommandHandler('facebook', facebok))
 dispatcher.add_handler(CommandHandler('help', help))
 dispatcher.add_handler(MessageHandler([Filters.status_update], empty_message))
 dispatcher.add_handler(CommandHandler('invitelink',invitelink))
-dispatcher.add_handler(CommandHandler('mailinglist',mailinglist))
 dispatcher.add_handler(CommandHandler('twitter',twitter))
-dispatcher.add_handler(CommandHandler('meetuplink',meetuplink))
 dispatcher.add_handler(CommandHandler('start', start))
-dispatcher.add_handler(CommandHandler('github',github))
+
 
 updater.start_polling()
 updater.idle()
