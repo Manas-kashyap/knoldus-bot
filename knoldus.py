@@ -25,7 +25,7 @@ dispatcher = updater.dispatcher
 def start(bot, update):
     bot.sendChatAction(chat_id=update.message.chat_id, action=ChatAction.TYPING)
     bot.sendMessage(chat_id=update.message.chat_id, text= '''
-Hey!! I'm currently Working with Knoldus To hire me contact my admin
+Hey!! I'm currently Working with Knoldus INC To hire me contact my admin
 Use /help to get help''')
 
 
